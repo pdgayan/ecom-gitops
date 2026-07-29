@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: auth-service
+ 
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: auth
+
+  template:
+    metadata:
+      labels:
+        app: auth 
+
+    spec:
+      containers:
+      - name: auth-service
+        image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:eb100c68912abca95978b4fb9d9675c7ad4a1c7b
+        ports:
+        - containerPort: 4001

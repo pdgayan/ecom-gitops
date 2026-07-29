@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: catalog-service
+ 
+
+spec:
+  replicas: 3
+
+  selector:
+    matchLabels:
+      app: catalog
+
+  template:
+    metadata:
+      labels:
+        app: catalog 
+
+    spec:
+      containers:
+      - name: catalog-service
+        image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:401ac20d0ad25ad016325d2fc4d9ee1e03c49398
+        ports:
+        - containerPort: 4002
