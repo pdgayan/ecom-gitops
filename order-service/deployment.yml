@@ -1,25 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: order-service
- 
-
 spec:
   replicas: 3
-
   selector:
     matchLabels:
       app: order
-
   template:
     metadata:
       labels:
-        app: order 
-
+        app: order
     spec:
       containers:
-      - name: order-service
-        image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/order-service:latest
-        ports:
-        - containerPort: 4004
+        - name: order-service
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/order-service:7ae02d02a081794e6c4abf698d0d3c5ce0cf794f
+          ports:
+            - containerPort: 4004
