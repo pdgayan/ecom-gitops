@@ -1,25 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: payment-service
- 
-
 spec:
   replicas: 3
-
   selector:
     matchLabels:
       app: payment
-
   template:
     metadata:
       labels:
-        app: payment 
-
+        app: payment
     spec:
       containers:
-      - name: payment-service
-        image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/payment-service:latest
-        ports:
-        - containerPort: 4005
+        - name: payment-service
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/payment-service:7ae02d02a081794e6c4abf698d0d3c5ce0cf794f
+          ports:
+            - containerPort: 4005
