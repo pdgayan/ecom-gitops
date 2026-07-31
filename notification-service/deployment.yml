@@ -1,25 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-
 metadata:
   name: notificataion-service
- 
-
 spec:
   replicas: 3
-
   selector:
     matchLabels:
       app: notificataion
-
   template:
     metadata:
       labels:
-        app: notificataion 
-
+        app: notificataion
     spec:
       containers:
-      - name: notificataion-service
-        image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:latest
-        ports:
-        - containerPort: 4006
+        - name: notificataion-service
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:b6bfd23737e15119333f6c7a7f7972be24ff4411
+          ports:
+            - containerPort: 4006
