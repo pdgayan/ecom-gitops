@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: catalog-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:3e499bb0b097b710e2bb0a01dc393a8a882e5574
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:0dab10f1e7aa5df172fe603b4fe776eb0f936a25
           ports:
             - containerPort: 4002
