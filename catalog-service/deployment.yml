@@ -7,7 +7,6 @@ spec:
   selector:
     matchLabels:
       app: catalog
-      
   template:
     metadata:
       labels:
@@ -16,9 +15,12 @@ spec:
       serviceAccountName: catalog-service-sa
       containers:
         - name: catalog-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:7d05c83ce4f7ddafcca9975f059c6eda8a7538ba
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:39c51bd3f8fa7de15f66b926a4a7f022d26683a4
           ports:
             - containerPort: 4002
+<<<<<<< HEAD
           env:
             - name: DB_SECRET_ARN
               value: arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-0ebac1e2-a61f-4cc8-a061-bcd2cef4f5b8-nIVNmM
+=======
+>>>>>>> dae983911591c4c2befc6c2cb9b8346d52719414
