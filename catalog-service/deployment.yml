@@ -21,3 +21,9 @@ spec:
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-0ebac1e2-a61f-4cc8-a061-bcd2cef4f5b8-nIVNmM"
+            - name: DB_HOST
+              value: "productdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: "productdb"
