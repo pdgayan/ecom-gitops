@@ -27,3 +27,7 @@ spec:
               value: "5432"
             - name: DB_NAME
               value: "productdb"
+            - name: AWS_STS_REGIONAL_ENDPOINTS
+              value: "regional"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
