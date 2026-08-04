@@ -15,7 +15,7 @@ spec:
       serviceAccountName: catalog-service-sa
       containers:
         - name: catalog-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:c9b21634e202c4fd2b5a3f70317d8eac0ef97f41
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:4e35122bf9ceec1c8aeb49fed6b57f661e6b72c8
           ports:
             - containerPort: 4002
           env:
