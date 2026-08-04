@@ -7,13 +7,15 @@ spec:
   selector:
     matchLabels:
       app: catalog
+      
   template:
     metadata:
       labels:
         app: catalog
     spec:
+      serviceAccountName: catalog-service-sa
       containers:
         - name: catalog-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:0dab10f1e7aa5df172fe603b4fe776eb0f936a25
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:155c7080a280d365441be2585919f708b87e768d
           ports:
             - containerPort: 4002
