@@ -20,7 +20,7 @@ spec:
             - containerPort: 4002
           env:
             - name: DB_SECRET_ARN
-              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-0ebac1e2-a61f-4cc8-a061-bcd2cef4f5b8-nIVNmM"
+              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-1a6c74a2-c1c7-496d-83ca-386c7068db12-P9f5QL"
             - name: DB_HOST
               value: "productdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
             - name: DB_PORT
