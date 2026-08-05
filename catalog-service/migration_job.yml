@@ -13,7 +13,7 @@ spec:
       containers:
         - name: migrate
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:a0896d019b432311f8c1059d44540e4a6424f351
-          command: ["npx", "knex", "migrate:latest"]
+          command: ["node", "migrate.js"]
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-1a6c74a2-c1c7-496d-83ca-386c7068db12-P9f5QL"
