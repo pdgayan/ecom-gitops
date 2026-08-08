@@ -12,7 +12,7 @@ spec:
       serviceAccountName: catalog-service-sa
       containers:
         - name: migrate
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:d93479fc749ad508da4294dea7f6afa2fa6b83f9
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:ac4ce2a7538885be7bdaec4a974b3a1030ad4219
           command: ["node", "migrate.js"]
           env:
             - name: DB_SECRET_ARN
