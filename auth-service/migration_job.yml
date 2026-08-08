@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: auth-migration
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      serviceAccountName: auth-service-sa
+      containers:
+        - name: migrate
+          image: 
+          command: ["node", "migrate.js"]
+          env:
+            - name: DB_SECRET_ARN
+              value: ""
+            - name: DB_HOST
+              value: ""
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: "authdb"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"

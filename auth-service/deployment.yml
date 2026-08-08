@@ -12,6 +12,7 @@ spec:
       labels:
         app: auth
     spec:
+      serviceAccountName : auth-service-sa 
       containers:
         - name: auth-service
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:cb1003fe53c652959fa5fc50fa811f607d38ac51
