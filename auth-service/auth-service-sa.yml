@@ -4,4 +4,4 @@ metadata:
   name: auth-service-sa
   namespace: default
   annotations:
-    eks.amazonaws.com/role-arn: arn:aws:iam::463623100443:role/catalog-db-secret-read
+    eks.amazonaws.com/role-arn: arn:aws:iam::463623100443:role/auth-db-secret-read
