@@ -18,3 +18,17 @@ spec:
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:cb1003fe53c652959fa5fc50fa811f607d38ac51
           ports:
             - containerPort: 4001
+          
+          env:
+            - name: DB_SECRET_ARN
+              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-f38b029e-dbbd-410f-a608-9816fd043678-VR03Cl"
+            - name: DB_HOST
+              value: "authdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: "authdb"
+            - name: AWS_STS_REGIONAL_ENDPOINTS
+              value: "regional"
+            - name: AWS_DEFAULT_REGION
+              value: "us-east-1"
