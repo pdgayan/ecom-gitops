@@ -16,10 +16,9 @@ spec:
       serviceAccountName: auth-service-sa
       containers:
         - name: auth-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:ac4ce2a7538885be7bdaec4a974b3a1030ad4219
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:47acf9b9fe4942d8a6fec379652ed44806d94f37
           ports:
             - containerPort: 4001
-          
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-f38b029e-dbbd-410f-a608-9816fd043678-VR03Cl"
