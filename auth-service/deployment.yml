@@ -21,7 +21,7 @@ spec:
             - containerPort: 4001
           env:
             - name: DB_SECRET_ARN
-              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-f38b029e-dbbd-410f-a608-9816fd043678-VR03Cl"
+              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-6afe1c31-6140-42c6-a273-312ef1b24066-wst8VH"
             - name: DB_HOST
               value: "authdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
             - name: DB_PORT
