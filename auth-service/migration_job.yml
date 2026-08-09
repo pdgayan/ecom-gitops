@@ -4,6 +4,7 @@ metadata:
   name: auth-migration
   annotations:
     argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-weight: "0"
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
 spec:
   template:
