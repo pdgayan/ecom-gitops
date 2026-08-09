@@ -6,3 +6,4 @@ metadata:
   namespace: default
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::463623100443:role/auth-db-secret-read
+    argocd.argoproj.io/sync-wave: "-1"
