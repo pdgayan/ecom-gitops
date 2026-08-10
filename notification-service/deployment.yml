@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: notificataion-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:3cc394e7e64f374bcbd4b54aec99a586e8b7868f
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:f46c0d035380a16e262800d3c83a30daa5ec4329
           ports:
             - containerPort: 4006

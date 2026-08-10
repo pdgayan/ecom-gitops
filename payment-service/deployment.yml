@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: payment-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/payment-service:4cfa3550ca6267cf2f7cce3b5bcff752c2dc2ff5
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/payment-service:f46c0d035380a16e262800d3c83a30daa5ec4329
           ports:
             - containerPort: 4005
