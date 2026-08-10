@@ -16,7 +16,7 @@ spec:
       serviceAccountName: auth-service-sa
       containers:
         - name: auth-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:d0312f62b964309fc15e6deccfd8d84de9e952c9
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:575eb78f2ead6ea5108f7cde116a705137448bba
           ports:
             - containerPort: 4001
           env:
