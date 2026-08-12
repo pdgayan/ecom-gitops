@@ -1,5 +1,11 @@
 # The Project
-This is a simulation of how a microservices e-commerce application is deployed and operated on AWS. Six independently deployed services run on Amazon Elastic Kubernetes Service (EKS), with each service owning its own RDS PostgreSQL database for strict data isolation. The wider infrastructure leans on AWS native tooling throughout ECR for container image storage, S3 for static frontend hosting and product assets, Secrets Manager for credential management, and IAM with IRSA for fine grained, pod level access control, no long lived credentials anywhere in the system.
+This is a simulation of how a microservices e-commerce application is deployed and operated on AWS. Six independently deployed services run on Amazon Elastic Kubernetes Service (EKS), with each service owning its own RDS PostgreSQL database for strict data isolation. The wider infrastructure leans on AWS native tooling throughout ECR for container image storage, S3 for static frontend hosting and product assets, Secrets Manager for credential management, and IAM with IRSA for fine grained, pod level access control, no long lived credentials anywhere in the system. This project is maintained across four repositories ,
+
+1. [Platform Repository](https://github.com/pdgayan/ecom-platform-aws)
+2. [Backend Services Repository](https://github.com/pdgayan/ecom-services)
+3. [GitOps Repository](https://github.com/pdgayan/ecom-gitops)
+4. [Web Repository](https://github.com/pdgayan/ecom-web)
+
 
 # ecom-gitops
 
