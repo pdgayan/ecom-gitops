@@ -21,11 +21,11 @@ spec:
             - containerPort: 4001
           env:
             - name: DB_SECRET_ARN
-              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-c4f51d83-995f-42d7-9f11-b4b46f22c6f2-khAmMl"
+              value: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx7-9f11-b4b46f22c6f2-khAmMl"
             - name: DB_HOST
-              value: "authdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
+              value: "xxxxxxxxxxxxxxxxxxxxxxxxxs-east-1.rds.amazonaws.com"
             - name: DB_PORT
-              value: "5432"
+              value: "xx32"
             - name: DB_NAME
               value: "authdb"
             - name: AWS_STS_REGIONAL_ENDPOINTS

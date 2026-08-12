@@ -18,9 +18,9 @@ spec:
           command: ["node", "migrate.js"]
           env:
             - name: DB_SECRET_ARN
-              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-93dd91fc-ba37-4d9f-9a31-c59201a5c884-kkaxtP"
+              value: "xxxxxxxxxxxxxxxxxxxxxxx00443:secret:rds1-c59201a5c884-kkaxtP"
             - name: DB_HOST
-              value: "productdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
+              value: "produ-1.rds.amazonaws.com"
             - name: DB_PORT
               value: "5432"
             - name: DB_NAME

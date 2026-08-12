@@ -1,3 +1,6 @@
+# The Project
+This is a simulation of how a microservices e-commerce application is deployed and operated on AWS. Six independently deployed services run on Amazon Elastic Kubernetes Service (EKS), with each service owning its own RDS PostgreSQL database for strict data isolation. The wider infrastructure leans on AWS native tooling throughout ECR for container image storage, S3 for static frontend hosting and product assets, Secrets Manager for credential management, and IAM with IRSA for fine grained, pod level access control, no long lived credentials anywhere in the system.
+
 # ecom-gitops
 
 This is the **single source of truth** for what runs on the EKS cluster. It holds every Kubernetes manifest and the ArgoCD Application definitions that wire them to the cluster. The backend CI pipeline writes to this repository — updating image tags in deployment manifests — and ArgoCD continuously reconciles the cluster state to match what is declared here. No one deploys directly to the cluster; all changes flow through a commit to this repository.
