@@ -32,3 +32,7 @@ spec:
               value: "regional"
             - name: AWS_DEFAULT_REGION
               value: "us-east-1"
+            - name: AWS_REGION
+              value: "us-east-1"
+            - name: S3_BUCKET_NAME
+              value: "ecom-product-images-test-bucket"
