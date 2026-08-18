@@ -17,3 +17,11 @@ spec:
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:e57face5a0ee17eac4168093660b701366caad37
           ports:
             - containerPort: 4006
+
+          resources:
+            requests:
+              cpu: "80m"
+              memory: "128Mi"
+            limits:
+              cpu: "200m"
+              memory: "512Mi"

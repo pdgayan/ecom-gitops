@@ -17,3 +17,11 @@ spec:
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/cart-service:727988134a3f8a80128ee6ee8a7bf1865f0a9ab1
           ports:
             - containerPort: 4003
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
