@@ -19,6 +19,15 @@ spec:
           image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:7d1895474ab83fc04c802a5c915fd35ef29f93e0
           ports:
             - containerPort: 4002
+
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+              
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-c425e51b-5205-4836-ab89-4e9231206ef3-AQGJxz"
