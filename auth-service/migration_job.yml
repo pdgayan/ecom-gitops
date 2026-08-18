@@ -18,11 +18,11 @@ spec:
           command: ["node", "migrate.js"]
           env:
             - name: DB_SECRET_ARN
-              value: "xxxxxxxxxxxxxxxxxxxxxxxxxxMl"
+              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-5ff8569e-2477-4ec7-9fd5-40eb0e17bb77-dSNfry"
             - name: DB_HOST
-              value: "xxxxxxxxxxxxxxxx-1.rds.amazonaws.com"
+              value: "authdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
             - name: DB_PORT
-              value: "5xx2"
+              value: "5432"
             - name: DB_NAME
               value: "authdb"
             - name: AWS_DEFAULT_REGION
