@@ -16,7 +16,7 @@ spec:
       serviceAccountName: catalog-service-sa
       containers:
         - name: catalog-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:9f2de39c360e63e6fe74474fb657d3bbbb16842c
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/catalog-service:40711807ffca1568b06fa2e1b5c35a2569d8a53f
           ports:
             - containerPort: 4002
           resources:
@@ -26,24 +26,20 @@ spec:
             limits:
               cpu: "500m"
               memory: "512Mi"
-
           startupProbe:
             httpGet:
               path: /catalog/health/live
               port: 4002
             failureThreshold: 30
             periodSeconds: 10
-
           livenessProbe:
             httpGet:
               path: /catalog/health/live
               port: 4002
-
           readinessProbe:
             httpGet:
               path: /catalog/health/ready
               port: 4002
-
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-96e378c4-985c-46c5-b527-5e45e9380942-t1PZbe"
