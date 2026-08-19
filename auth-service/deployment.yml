@@ -16,11 +16,9 @@ spec:
       serviceAccountName: auth-service-sa
       containers:
         - name: auth-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:f59441604f8b75d073b74b41a81ce11854d72782
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:56e292d06f4726ec8cad15d93b01322d7136ddf7
           ports:
             - containerPort: 4001
-
-
           resources:
             requests:
               cpu: "50m"
@@ -28,7 +26,6 @@ spec:
             limits:
               cpu: "300m"
               memory: "160Mi"
-
           env:
             - name: DB_SECRET_ARN
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-1541a625-ee71-4fbd-b0c6-95e6518fb3da-Dqlnar"

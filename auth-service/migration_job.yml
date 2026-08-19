@@ -14,7 +14,7 @@ spec:
       serviceAccountName: auth-service-sa
       containers:
         - name: migrate
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:f59441604f8b75d073b74b41a81ce11854d72782
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/auth-service:56e292d06f4726ec8cad15d93b01322d7136ddf7
           command: ["node", "migrate.js"]
           env:
             - name: DB_SECRET_ARN
