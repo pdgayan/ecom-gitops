@@ -14,10 +14,9 @@ spec:
     spec:
       containers:
         - name: notificataion-service
-          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:e57face5a0ee17eac4168093660b701366caad37
+          image: 463623100443.dkr.ecr.us-east-1.amazonaws.com/notification-service:2b424624f701ea61de3a4802db73453a1efcc9c9
           ports:
             - containerPort: 4006
-
           resources:
             requests:
               cpu: "80m"
