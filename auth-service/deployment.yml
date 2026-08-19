@@ -31,7 +31,7 @@ spec:
 
           env:
             - name: DB_SECRET_ARN
-              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-5ff8569e-2477-4ec7-9fd5-40eb0e17bb77-dSNfry"
+              value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-1541a625-ee71-4fbd-b0c6-95e6518fb3da-Dqlnar"
             - name: DB_HOST
               value: "authdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
             - name: DB_PORT
