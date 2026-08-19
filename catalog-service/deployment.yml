@@ -28,9 +28,9 @@ spec:
               memory: "512Mi"
           env:
             - name: DB_SECRET_ARN
-              value: ""
-            - name: DB_HOST
               value: "arn:aws:secretsmanager:us-east-1:463623100443:secret:rds!db-96e378c4-985c-46c5-b527-5e45e9380942-t1PZbe"
+            - name: DB_HOST
+              value: "productdb-dev.ca3yoec4ecx8.us-east-1.rds.amazonaws.com"
             - name: DB_PORT
               value: "5432"
             - name: DB_NAME
